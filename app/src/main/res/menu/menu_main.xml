@@ -2,12 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/menu_item_1"
+        android:id="@+id/mi_meow"
         app:showAsAction="always"
-        android:title="test"/>
+        android:title="@string/meow"/>
 
     <item
-        android:id="@+id/menu_item_2"
-        android:title="test"
+        android:id="@+id/mi_meow_toast"
+        android:title="@string/meow"
         app:showAsAction="ifRoom" />
+    <group android:id="@+id/group_background_color"
+        android:checkableBehavior="single">
+            <item android:id="@+id/gi_color_black"
+                android:title="@string/color_black"
+                android:checked="true"
+                />
+            <item android:id="@+id/gi_color_white"
+                android:title="@string/color_white"/>
+    </group>
+    <item
+        android:id="@+id/mi_settings"
+        android:title="@string/settings" />
+
 </menu>

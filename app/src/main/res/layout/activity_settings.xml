@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cybulski.tomasz.funnycats.SettingsActivity">
+    <TextView
+        android:id="@+id/tv_select_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_sound"
+        android:layout_margin="8dp"/>
+    <RadioGroup
+        android:id="@+id/rg_select_sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_select_sound">
+        <RadioButton
+            android:id="@+id/rb_sound_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regular_meow"
+            android:onClick="setSound"/>
+        <RadioButton
+            android:id="@+id/rb_sound_lion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/big_meow"
+            android:onClick="setSound"/>
+        <RadioButton
+            android:id="@+id/rb_sound_dog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dog_meow"
+            android:onClick="setSound"/>
+    </RadioGroup>
+
+</RelativeLayout>

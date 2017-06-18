@@ -86,6 +86,6 @@ class ShakeHandler : SensorEventListener {
         private val MOV_COUNTS = 4
         private val MOV_THRESHOLD = 4
         private val ALPHA = 0.8f
-        private val SHAKE_WINDOW_TIME_INTERVAL = 1000 // milliseconds
+        private val SHAKE_WINDOW_TIME_INTERVAL = 2000 // milliseconds
     }
 }
